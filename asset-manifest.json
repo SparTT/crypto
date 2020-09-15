@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/crypto/static/css/main.44c7d1aa.chunk.css",
-    "main.js": "/crypto/static/js/main.c2c477c0.chunk.js",
-    "main.js.map": "/crypto/static/js/main.c2c477c0.chunk.js.map",
+    "main.css": "/crypto/static/css/main.2ddce93b.chunk.css",
+    "main.js": "/crypto/static/js/main.557dcc9e.chunk.js",
+    "main.js.map": "/crypto/static/js/main.557dcc9e.chunk.js.map",
     "runtime-main.js": "/crypto/static/js/runtime-main.b477169b.js",
     "runtime-main.js.map": "/crypto/static/js/runtime-main.b477169b.js.map",
     "static/js/2.459bb840.chunk.js": "/crypto/static/js/2.459bb840.chunk.js",
     "static/js/2.459bb840.chunk.js.map": "/crypto/static/js/2.459bb840.chunk.js.map",
     "index.html": "/crypto/index.html",
-    "precache-manifest.8c484e4572d5525e3be4d9be3e841dfe.js": "/crypto/precache-manifest.8c484e4572d5525e3be4d9be3e841dfe.js",
+    "precache-manifest.be97d583631da3be8f5a98eb35605923.js": "/crypto/precache-manifest.be97d583631da3be8f5a98eb35605923.js",
     "service-worker.js": "/crypto/service-worker.js",
-    "static/css/main.44c7d1aa.chunk.css.map": "/crypto/static/css/main.44c7d1aa.chunk.css.map",
+    "static/css/main.2ddce93b.chunk.css.map": "/crypto/static/css/main.2ddce93b.chunk.css.map",
     "static/js/2.459bb840.chunk.js.LICENSE.txt": "/crypto/static/js/2.459bb840.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b477169b.js",
     "static/js/2.459bb840.chunk.js",
-    "static/css/main.44c7d1aa.chunk.css",
-    "static/js/main.c2c477c0.chunk.js"
+    "static/css/main.2ddce93b.chunk.css",
+    "static/js/main.557dcc9e.chunk.js"
   ]
 }
