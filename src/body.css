@@ -1,0 +1,53 @@
+.total-fiat {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+#bitcoin {
+  grid-area: bitcoin;
+}
+#monero {
+  grid-area: monero;
+}
+#ethereum {
+  grid-area: ethereum;
+}
+
+.price-container .title {
+  grid-area: title;
+}
+
+.container {
+  padding: 1ch;
+  margin-bottom: 5ch;
+}
+
+.loading-gif {
+  text-align: center;
+  margin-top: 40vh;
+}
+
+.loading-gif i {
+  animation: 2s rotate-loop infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-loop {
+  0%   { transform: rotate(1deg);;}
+  100% { transform: rotate(360deg);}
+}
+
+
+
+.crypto-container {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: 
+  "title"
+  "bitcoin"
+  "monero"
+  "ethereum";
+}

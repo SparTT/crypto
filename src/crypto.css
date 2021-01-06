@@ -1,0 +1,88 @@
+.price-container {
+  border: 1px solid white;
+  padding: 1ch 0ch 1ch 0ch;
+  text-align: center;
+  background: #4a4a4a;
+  width: 70%;
+  grid-template-areas:
+    "a b c d e";
+  display: grid;
+  align-items: center;
+  grid-auto-columns: 20%;
+  margin-bottom: -1px;
+}
+
+.price-change {
+  display: grid;
+}
+
+.price-change span {
+  text-align: right;
+  margin-right: 1ch;
+  font-size: 1rem;
+}
+
+.positive {
+  color: #28a745;
+}
+
+.positive:before {
+  content: '+';
+}
+
+.negative {
+  color: #dc3545;
+}
+
+.crypto {
+  display: grid;
+  justify-items: center;
+}
+
+.crypto-icon {
+  width: 50px;
+  height: 50px; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@media (max-width: 799px) {
+  .crypto {
+    grid-area: a;
+  }
+  .owned-value {
+    grid-area: b;
+  }
+  .recent-price {
+    grid-area: c;
+  }
+  .user-owned-value {
+    grid-area: d;
+  }
+  .price-change {
+    grid-area: e;
+  }
+  .price-container {
+    width: 100%;
+    grid-template-areas:
+      "a b e"
+      "c d e";
+    grid-auto-columns: 33%;
+    border-bottom: 1px solid whitesmoke;
+  }
+
+  .price-change span {
+    font-size: 0.7rem;
+  }
+
+  .price-container div {
+    font-size: 0.7rem;
+  }
+  .crypto-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
