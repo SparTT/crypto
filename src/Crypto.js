@@ -9,6 +9,7 @@ export default class App extends Component {
     var res = []
     var title  = this.props.name
     title = title.charAt(0).toUpperCase() + title.slice(1);
+    title = title.replace(/-/g, ' ')
 
     var owned = Number(this.props.qtd) * Number(Data.current_price)
 

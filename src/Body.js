@@ -3,21 +3,21 @@ import Crypto from './Crypto.js';
 import GetValue from './InputValue'
 import './body.css'
 
-var myC = 0.09788655
-var btcBFi = 0.01098411
+var btcBC = 0.10077885
+var btcBFi = 0
 var btc = {
   name: 'Bitcoin',
-  qtd: myC + btcBFi
+  qtd: btcBC + btcBFi
 }
 
 var xmr = {
   name: 'Monero',
-  qtd: 2.095737850000
+  qtd: 2.019590980000
 }
 
 
-var ethBFi = 1.00712131
-var ethBC = 0.015860642
+var ethBFi = 1.21323169
+var ethBC = 0.00058593
 var eth = {
   name: 'Ethereum',
   qtd: ethBFi + ethBC
@@ -43,10 +43,15 @@ var dogecoin = {
   qtd: 0
 }
 
+var slp = {
+  name: 'smooth-love-potion',
+  qtd: 356
+}
+
 
 var user = {
   fiatCurrencies: 'brl',
-  data: [btc, xmr, eth, dash, nano, nuls, dogecoin]
+  data: [btc, xmr, eth, dash, nano, nuls, dogecoin, slp]
 }
 
 var cryptos = ''
@@ -70,8 +75,7 @@ export default class App extends Component {
   
 getPrice() {
   var vs_currencies = user.fiatCurrencies // fiat coin pra comparar
-  var id = user.cryptos.toLowerCase()
- 
+  var id = encodeURIComponent(user.cryptos.toLowerCase())
   // https://api.coingecko.com/api/v3/coins/markets?vs_currency=${vs_currencies}&ids=${id}&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C24h
 
    fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${vs_currencies}&ids=${id}&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h,24h,7d`)
